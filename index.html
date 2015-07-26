@@ -1,21 +1,26 @@
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Donnez tout objet en quelques heures !">
+	<meta name="keywords" content="don, gratuit, application, recuperer, gratuitement, debaras, rapide">
+	<meta property="og:image" content="img/facebook.jpg" />
 	<title>
-		Brocante App
+		Brocante — Donnez tout objet en quelques heures
 	</title>
-
 	<style>
 	html, body{
 		background-color: #fff;
 		background-image: url(img/pattern.png);
     	background-size: 400px 280px;
 		background-repeat: repeat;
+		font-size: 16px !important;
+		font-family: 'Lato', sans-serif !important; 
 	}
 
 	img.logo{
 		width: 320px;
 		height: 282px;
-		margin-top: 150px;
+		margin-top: 48px;
 	}
 
 	img.app-store{
@@ -23,21 +28,144 @@
 		margin-top: 48px;
 	}
 
+	form{
+		margin-top: 32px;
+		text-align: center !important; 
+	}
+
+	form input{
+		margin-top: 32px;
+		margin: 0 auto !important;
+		display: inline-block !important;
+		padding-left: 8px !important;
+	}
+
+	form input[type="email"]{
+		width: 300px !important;
+		color: #333 !important;
+	}
+
+	.phrase{
+		margin-bottom: 12px;
+		font-weight: bold;
+	}
+
+	form input[type="submit"]{
+		padding: 0px 32px !important;
+		margin: 20px 0px 24px 0px !important;
+		background-color: #11c1f3 !important;
+		width: auto !important;
+	}
+
+	h2, h3{
+		color: #11c1f3 !important;
+	}
+
+	.photos-container{
+		width: 100%;
+		overflow: hidden;
+		position: fixed;
+		bottom: 0px;
+	}
+
+	.photos{
+		height: 170px;
+		background-color: #00546c;
+		width: 3000px;
+	}
+
+	.photos img{
+		height: 100%;
+		float: left;
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+		opacity: 0.5;
+	}
+
+	.photos img:hover{
+		-webkit-filter: none;
+		filter: none;
+		opacity: 0.7;
+
+	}	
+
+	.newsletter-container{
+		width: 100%;
+		height: 170px;
+		overflow: hidden;
+		position: fixed;
+		bottom: 0px;
+		color: white;
+		z-index: 10;
+		margin: 24px 0px 24px 0px;
+	}
+
+	.steps-container{
+		background-color: white;
+		margin: 72px 0px 230px 0px;
+		border: 1px solid #cccccc;
+		border-left: 0px;
+		border-right: 0px;
+	}
+
+	img.steps{
+		max-width: 1000px;
+	}
+
 	</style>
 	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-	<div class="col-md-3">
+	<div class="photos-container">
+		<div class="photos">
+			<img src="http://media.lasdepique.fr/products/73eaf810-0566-11e5-a86c-81aad68057ec.jpg" />
+			<img src="http://media.lasdepique.fr/products/ed956960-fe23-11e4-a3fb-8786608c43f3.jpg" />
+			<img src="http://media.lasdepique.fr/products/5722a0d0-fbbf-11e4-a07e-598a81f43293.jpg" />
+			<img src="http://media.lasdepique.fr/products/dc1ef040-fb2e-11e4-b205-dba287e600d8.jpg" />
+			<img src="http://media.lasdepique.fr/products/8d46eae0-fb2e-11e4-b205-dba287e600d8.jpg" />
+			<img src="http://media.lasdepique.fr/products/fd5e32d0-e74b-11e4-81bb-df9cdbe7ec53.jpg" />
+			<img src="http://media.lasdepique.fr/products/c778adc0-d257-11e4-813d-71d6a94a5805.jpg" />
+			<img src="http://media.lasdepique.fr/products/73eaf810-0566-11e5-a86c-81aad68057ec.jpg" />
+			<img src="http://media.lasdepique.fr/products/ed956960-fe23-11e4-a3fb-8786608c43f3.jpg" />
+			<img src="http://media.lasdepique.fr/products/5722a0d0-fbbf-11e4-a07e-598a81f43293.jpg" />
+			<img src="http://media.lasdepique.fr/products/dc1ef040-fb2e-11e4-b205-dba287e600d8.jpg" />
+			<img src="http://media.lasdepique.fr/products/8d46eae0-fb2e-11e4-b205-dba287e600d8.jpg" />
+			<img src="http://media.lasdepique.fr/products/fd5e32d0-e74b-11e4-81bb-df9cdbe7ec53.jpg" />
+			<img src="http://media.lasdepique.fr/products/c778adc0-d257-11e4-813d-71d6a94a5805.jpg" />
+		</div>
 	</div>
-	<div class="col-md-6">
+	<div class="newsletter-container">
+		<!-- Begin MailChimp Signup Form -->
+		<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+		<div id="mc_embed_signup">
+		<form action="//brocante.us11.list-manage.com/subscribe/post?u=b6202986acbeee554f665c313&amp;id=84d84df259" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<div class="phrase">Soyez parmis les premiers &agrave; tester l'application!</div>
+			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="votre adresse email" required>
+		    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		    <div style="position: absolute; left: -5000px;"><input type="text" name="b_b6202986acbeee554f665c313_84d84df259" tabindex="-1" value=""></div><br />
+		    <div class="clear"><input type="submit" value="avertissez moi" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+		    </div>
+		</form>
+		</div>
+		<!--End mc_embed_signup-->
+	</div>
+
+	<!-- <div class="col-md-3">
+	</div>
+	<div class="col-md-6"> -->
 		<center>
 			<img src="img/brocante_io_logo.png" class="logo" alt="Brocante.io" /><br />
-			<a href="#"><img src="img/app_store.svg" class="app-store" alt="Téléchager dans l'App store" /></a>
+			<h3>Donnez tout objet en quelques heures !</h3>
+			<!--<a href="#"><img src="img/app_store.svg" class="app-store" alt="Téléchager dans l'App store" /></a>-->
+			<div class="steps-container">
+				<img src="img/donner-etapes.png" class="steps" alt="Étapes pour donner un objet" />
+			</div>
 		</center>
-	</div>
+	<!-- </div>
 	<div class="col-md-3">
-	</div>
+	</div> -->
 </body>
 
 </html>
