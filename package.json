@@ -1,0 +1,23 @@
+{
+  "name"        : "website",
+  "version"     : "1.0.0",
+  "description" : "",
+  "scripts"     : {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository"  : {
+    "type": "git",
+    "url" : "https://github.com/brocante/website.git"
+  },
+  "author"      : "",
+  "license"     : "ISC",
+  "bugs"        : {
+    "url": "https://github.com/brocante/website/issues"
+  },
+  "homepage"    : "https://github.com/brocante/website",
+  "dependencies": {
+    "gulp"     : "3.8.11",
+    "gulp-util": "3.0.4",
+    "vinyl-ftp": "0.4.0"
+  }
+}
